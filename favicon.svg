@@ -1,0 +1,47 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{ V V }; animated icon — Vishal Vishwakarma">
+  <title>{ V V }; — Vishal Vishwakarma</title>
+  <defs>
+    <linearGradient id="vvFaviconGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop class="stopA" offset="0" stop-color="#7C3AED"/>
+      <stop class="stopB" offset="0.5" stop-color="#EC4899"/>
+      <stop class="stopC" offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <style>
+    /* One full Normal -> Glow Pulse -> Semicolon Blink -> Gradient Shift -> Normal cycle every 3s */
+    .vv-mark {
+      animation: vvGlowPulse 3s ease-in-out infinite;
+      transform-origin: 110px 110px;
+    }
+    .vv-semi {
+      animation: vvSemiBlink 3s ease-in-out infinite;
+      transform-origin: 110px 110px;
+    }
+    .stopA { animation: vvStopA 3s ease-in-out infinite; }
+    .stopB { animation: vvStopB 3s ease-in-out infinite; }
+    .stopC { animation: vvStopC 3s ease-in-out infinite; }
+
+    @keyframes vvGlowPulse {
+      0%, 8%, 40%, 100% { filter: drop-shadow(0 0 0px rgba(255,255,255,0)); }
+      18% { filter: drop-shadow(0 0 6px rgba(255,255,255,.95)); }
+    }
+    @keyframes vvSemiBlink {
+      0%, 42%, 55%, 100% { opacity: 1; }
+      47%, 51% { opacity: .15; }
+    }
+    @keyframes vvStopA { 0%, 65%, 100% { stop-color: #7C3AED; } 82% { stop-color: #3B82F6; } }
+    @keyframes vvStopB { 0%, 65%, 100% { stop-color: #EC4899; } 82% { stop-color: #7C3AED; } }
+    @keyframes vvStopC { 0%, 65%, 100% { stop-color: #3B82F6; } 82% { stop-color: #EC4899; } }
+  </style>
+  <rect x="6" y="6" width="208" height="208" rx="50" fill="url(#vvFaviconGradient)"/>
+  <g class="vv-mark" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 68,58 C 55,58 55,58 55,73 C 55,81 55,84 45,89 C 55,94 55,97 55,105 C 55,120 55,120 68,120"/>
+    <path d="M 84,68 L 99,122 L 114,68"/>
+    <path d="M 126,68 L 141,122 L 156,68"/>
+    <path d="M 172,58 C 185,58 185,58 185,73 C 185,81 185,84 195,89 C 185,94 185,97 185,105 C 185,120 185,120 172,120"/>
+  </g>
+  <g class="vv-semi">
+    <circle cx="177" cy="152" r="7.5" fill="#FFFFFF"/>
+    <path d="M 180,168 L 168,190" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  </g>
+</svg>
